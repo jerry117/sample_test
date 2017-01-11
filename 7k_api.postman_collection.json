@@ -1,0 +1,99 @@
+{
+	"id": "6bc46119-50a9-ba15-f868-4445718eae52",
+	"name": "7k_api",
+	"description": "",
+	"order": [
+		"052b5d12-a336-d0d1-0bce-42411655ce88",
+		"c5117f92-65f7-eb9b-a026-949302c3efa4",
+		"90a32966-b100-c211-42a4-825ad7290958",
+		"efb542c1-0cff-4e63-f730-da09ec227477"
+	],
+	"folders": [],
+	"timestamp": 1484041758627,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "052b5d12-a336-d0d1-0bce-42411655ce88",
+			"headers": "",
+			"url": "http://box.aiwan-mc.com/7kadmin/api/server/list",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"code is 200\"] = jsonData.code === 200;\n\ntests[\"servername_data is mc部落\"] = jsonData.data[0].zhwId === 2587345964;\ntests[\"servername_data is 1\"] = jsonData.data[1][\"serverName\"] === \"1\";\ntests[\"servername_data is mc部落\"] = jsonData.data[2][\"serverName\"] === \"格雷小镇\";\ntests[\"servername_data is 圣光之城\"] = jsonData.data[3][\"serverName\"] === \"圣光之城\";\ntests[\"servername_data is 荣耀战神\"] = jsonData.data[4][\"serverName\"] === \"荣耀战神\";\ntests[\"servername_data is 英雄联萌\"] = jsonData.data[5][\"serverName\"] === \"英雄联萌\";\ntests[\"servername_data is 传奇世界\"] = jsonData.data[6][\"serverName\"] === \"传奇世界\";\ntests[\"servername_data is GOD服务器\"] = jsonData.data[7][\"serverName\"] === \"GOD服务器\";\ntests[\"servername_data is 中二部落@爱拍\"] = jsonData.data[8][\"serverName\"] === \"中二部落@爱拍\";\ntests[\"servername_data is MC魔方\"] = jsonData.data[9][\"serverName\"] === \"MC魔方\";\ntests[\"servername_data is 梦世界\"] = jsonData.data[10][\"serverName\"] === \"梦世界\";\ntests[\"servername_data is 红人家园\"] = jsonData.data[11][\"serverName\"] === \"红人家园\";\ntests[\"servername_data is 奶油\"] = jsonData.data[12][\"serverName\"] === \"奶油\";\ntests[\"servername_data is test\"] = jsonData.data[13][\"serverName\"] === \"test\";\ntests[\"servername_data is 剑侠情缘\"] = jsonData.data[14][\"serverName\"] === \"剑侠情缘\";\ntests[\"servername_data is 游戏嘉年华\"] = jsonData.data[15][\"serverName\"] === \"游戏嘉年华\";\ntests[\"servername_data is 第七空间\"] = jsonData.data[16][\"serverName\"] === \"第七空间\";\ntests[\"servername_data is 艾瓦兰大陆\"] = jsonData.data[17][\"serverName\"] === \"艾瓦兰大陆\";\ntests[\"servername_data is 方舟奇航\"] = jsonData.data[18][\"serverName\"] === \"方舟奇航\";\ntests[\"servername_data is 虚无部落\"] = jsonData.data[19][\"serverName\"] === \"虚无部落\";\ntests[\"servername_data is 图丫乐园\"] = jsonData.data[20][\"serverName\"] === \"图丫乐园\";\ntests[\"servername_data is 云之天地\"] = jsonData.data[21][\"serverName\"] === \"云之天地\";\ntests[\"servername_data is 刀剑神域\"] = jsonData.data[22][\"serverName\"] === \"刀剑神域\";\ntests[\"servername_data is 梦之森林\"] = jsonData.data[23][\"serverName\"] === \"梦之森林\";\ntests[\"servername_data is 萌娘战争\"] = jsonData.data[24][\"serverName\"] === \"萌娘战争\";\ntests[\"servername_data is 开拓者\"] = jsonData.data[25][\"serverName\"] === \"开拓者\";\ntests[\"servername_data is 科魔世纪\"] = jsonData.data[26][\"serverName\"] === \"科魔世纪\";\ntests[\"servername_data is 像素帝国\"] = jsonData.data[27][\"serverName\"] === \"像素帝国\";\ntests[\"servername_data is 唐朝盛世\"] = jsonData.data[28][\"serverName\"] === \"唐朝盛世\";\ntests[\"servername_data is 家园\"] = jsonData.data[29][\"serverName\"] === \"家园\";\ntests[\"servername_data is skyserver\"] = jsonData.data[30][\"serverName\"] === \"skyserver\";\ntests[\"servername_data is 云之天地go\"] = jsonData.data[31][\"serverName\"] === \"云之天地go\";\ntests[\"message success\"] = jsonData.message === \"success\";\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484105567854,
+			"name": "get_server_list",
+			"description": "",
+			"collectionId": "6bc46119-50a9-ba15-f868-4445718eae52",
+			"responses": []
+		},
+		{
+			"id": "90a32966-b100-c211-42a4-825ad7290958",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://box.aiwan-mc.com/7kadmin/api/recharge/add",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "queryString",
+					"value": "KaXwQfWYKqlFlLXcEFskX6uuuCWf+xoe3X1UhFZUlKx/Gdv9LgJWzEYi9/ZSGq48LFa+OjruSU1QvOQdiIBVyzal3brVwMZoRJpxkrpsEX5Q1sAWFfXNuXTCeEAUgT2/HPC9yBWaRs1sqQk4RhH80agfOElK7G4ren2Sjo6k50M=",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\nvar jsonData = JSON.parse(responseBody);\ntests[\"post play success\"] = jsonData.code === 200;\ntests[\"massage play success\"] = jsonData.message === \"success\";\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484105562170,
+			"name": "7k_play",
+			"description": "",
+			"collectionId": "6bc46119-50a9-ba15-f868-4445718eae52",
+			"responses": []
+		},
+		{
+			"id": "c5117f92-65f7-eb9b-a026-949302c3efa4",
+			"headers": "pid: \nsid: \n",
+			"url": "http://box.aiwan-mc.com/7kadmin/api/serverRole/list",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var jsonData = JSON.parse(responseBody);\ntests[\"Your name no login\"] = jsonData.code === 500;\ntests[\"date is empty\"] = jsonData.message === \"请先登录小游戏，并创建游戏角色！\";",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484105565112,
+			"name": "get_role_list",
+			"description": "",
+			"collectionId": "6bc46119-50a9-ba15-f868-4445718eae52",
+			"responses": []
+		},
+		{
+			"id": "efb542c1-0cff-4e63-f730-da09ec227477",
+			"headers": "",
+			"url": "http://box.aiwan-mc.com/7kadmin/api/user/loginv?username=13316115669s&pwd=E1M/8PB/sDk=",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\nvar jsonData = JSON.parse(responseBody);\ntests[\"Your test name\"] = jsonData.message === \"success\";",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484105558255,
+			"name": "7klogin",
+			"description": "",
+			"collectionId": "6bc46119-50a9-ba15-f868-4445718eae52",
+			"responses": []
+		}
+	]
+}

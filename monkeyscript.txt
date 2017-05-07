@@ -1,0 +1,19 @@
+#启动测试
+type = user
+count = 49
+speed = 1.0
+start data >>
+#启动应用宝
+LaunchActivity(com.tencent.android.qqdownloader, com.tencent.assistant.activity.SplashActivity)
+UserWait(2000)
+#点击搜索框
+Tap(100,110,1000)
+UserWait(2000)
+#输入字母"yyb"
+DispatchString(yyb)
+UserWait(2000)
+#点击搜索
+Tap(650,110,1000)
+UserWait(2000)
+#点击返回键返回首页
+DispatchPress(KEYCODE_BACK)

@@ -1,0 +1,103 @@
+---
+pluginList:
+- "com.testerhome.appcrawler.plugin.TagLimitPlugin"
+logLevel: "TRACE"
+saveScreen: true
+reportTitle: "banggoodbeta版测试报告"
+screenshotTimeout: 20
+currentDriver: "Android"
+tagLimitMax: 3
+tagLimit: []
+showCancel: false
+maxTime: 10800
+resultDir: "Android_20180606134958"
+devices:
+- platformName: ""
+  platformVersion: "9.2"
+  deviceName: "iPhone 6"
+capability:
+  appActivity: ""
+  appium: "http://127.0.0.1:4723/wd/hub"
+  autoLaunch: "true"
+  noReset: "true"
+  app: ""
+  appPackage: ""
+  fullReset: "false"
+androidCapability:
+  app: ""
+  appPackage: ""
+  appActivity: ""
+iosCapability:
+  app: ""
+  bundleId: ""
+  autoAcceptAlerts: "true"
+xpathAttributes:
+- "name"
+- "label"
+- "value"
+- "resource-id"
+- "content-desc"
+- "index"
+- "text"
+defineUrl: []
+baseUrl: []
+appWhiteList: []
+maxDepth: 6
+headFirst: true
+enterWebView: true
+urlBlackList: []
+urlWhiteList: []
+defaultBackAction: []
+backButton: []
+firstList: []
+selectedList:
+- "//*[contains(name(), 'Text')]"
+- "//*[contains(name(), 'Image')]"
+- "//*[contains(name(), 'Button')]"
+- "//*[contains(name(), 'CheckBox')]"
+lastList: []
+blackList:
+- ".*[0-9]{2}.*"
+triggerActions: 
+- xpath: "et_email"
+  action: "2826260236@qq.com"
+  times: 1
+- xpath: "et_pwd"
+  action: 123456
+  times: 1
+- xpath: "btn_sign"
+  action: "click"
+  times: 1
+
+autoCrawl: true
+assert:
+  name: "TesterHome AppCrawler"
+  steps: []
+testcase:
+  name: "TesterHome AppCrawler"
+  steps:
+  - given: null
+    when: null
+    then: null
+    xpath: "//*"
+    action: "driver.swipe(0.9, 0.5, 0.1, 0.5)"
+  - given: null
+    when: null
+    then: null
+    xpath: "//*"
+    action: "driver.swipe(0.9, 0.5, 0.1, 0.5)"
+  - given: null
+    when: null
+    then: null
+    xpath: "//*"
+    action: "driver.swipe(0.9, 0.5, 0.1, 0.5)"
+  - given: null
+    when: null
+    then: null
+    xpath: "//*"
+    action: "driver.swipe(0.9, 0.5, 0.1, 0.5)"
+beforeElementAction: []
+afterElementAction: []
+afterUrlFinished: []
+monkeyEvents: []
+monkeyRunTimeSeconds: 30

@@ -36,5 +36,9 @@ if __name__ == '__main__':
 
 # 先启动flask服务
 # flask run
-# 运行
+
+# windows运行方法
 # celery -A python_celery.celery_app worker -P eventlet -l info
+
+# Linux运行方法
+# celery -A python_celery.celery_app worker -l info
